@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'myriad-pro', sans-serif;
+}
+header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5ff8c;
+    padding: 20px 40px;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.logo {
+    width: 13%;
+    font-family: "gelica", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.navigation_box {
+    width: 11%;
+    position: relative;
+    background: url('../images/angle-small-down.svg') calc(100% - 7px) center no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navigation_box .label {
+    color: #f5ff8c;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'myriad-pro', sans-serif;
+}
+
+.navigation_box .navigation_list {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    max-height: 0;
+    background-color: #1f9370;
+    color: #f5ff8c;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: .3s ease-in;
+    border: 1px solid #1f9370;
+}
+
+.navigation_box .navigation_item {
+    padding: 15px;
+    transition: .2s ease-in;
+}
+
+.navigation_box .navigation_item:hover {
+    background-color: #f5ff8c;
+    color: #19202a;
+}
+
+.navigation_box.active .navigation_list {
+    max-height: 500px;
+    border: 1px solid #f5ff8c;
+}
+
+.navigation_expert {
+    width: 11%;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.search_bar {
+    width: 40%;
+    position: relative;
+}
+
+.search_bar input {
+    width: 100%;
+    padding: 10px 10px 10px 41px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #4ca98e;
+    caret-color: #f5ff8c;
+    color: #f5ff8c;
+}
+
+.search_bar input::placeholder {
+    color: #3b8973;
+}
+
+.search_bar input:-webkit-autofill,
+.search_bar input:-webkit-autofill:hover,
+.search_bar input:-webkit-autofill:focus,
+.search_bar input:-webkit-autofill:active {
+	-webkit-text-fill-color: #f5ff8c;
+    -webkit-box-shadow: 0 0 0px 1000px #4ca98e inset;
+    box-shadow: 0 0 0px 1000px #4ca98e inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.search_bar .search_label {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #f5ff8c;
+    border: 3px solid #4ca98e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search_bar .search_label img {
+    width: 15px;
+}
+
+.login_button {
+    width: 10%;
+    font-size: 14px;
+    border: 1px solid #f5ff8c;
+    color: #f5ff8c;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-weight: 400;
+    font-family: 'myriad-pro', sans-serif;
+}
+
+.signup_button {
+    width: 10%;
+    font-size: 14px;
+    background-color: #f5ff8c;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-weight: 400;
+    font-family: 'myriad-pro', sans-serif;
+}
+
+.section {
+    padding: 0 40px;
+    height: 100vh;
+}
+
+.section.section_01 {
+    padding-top: 80px;
+    background-color: #1f9370;
+}
+
+.section.section_01 .box {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section.section_01 .box .main_text {
+    font-family: "gelica", serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #f5ff8c;
+}
+
+.section.section_01 .box .sub_text {
+    font-family: 'myriad-pro', sans-serif;
+    font-weight: 300;
+    color: #f5ff8c;
+    line-height: 1.5;
+}
+
+.section.section_01 .box .sub_text .signup_free_button {
+    margin-top: 30px;
+    padding: 10px 80px 10px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'myriad-pro', sans-serif;
+    background: #aca3ff;
+    position: relative;
+}
+.section.section_01 .box .sub_text .signup_free_button::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+    border: 2px solid #aca3ff;
+    width: 34px;
+    height: 34px;
+    background: #f5ff8c url('../images/angle-right.svg') no-repeat center;
+    background-size: 14px;
+}
+
+.section.section_02 {
+    background-color: #caced7;
+}
+
+.section.section_03 {
+    background-color: #aca3ff;
+}
+
+.section.section_04 {
+    background-color: #f6fe8e;
+}
+
+.section.section_05 {
+    background-color: #19202a;
+}
+
+.section.section_06 {
+    background-color: #caced7;
+}
+
+.section.section_07 {
+    background-color: #1f9370;
+}
