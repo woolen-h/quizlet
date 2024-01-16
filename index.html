@@ -6,12 +6,16 @@
     <title>Quizlet</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cnu5hbi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <span>Quizlet</span>
+            <h1>Quizlet</h1>
         </div>
         <div class="navigation_box">
             <button type="button" class="label">Subject areas</button>
@@ -34,18 +38,20 @@
             </button>
             <input type="text" id="search" placeholder="Find it faster with a search">
         </div>
-        <button type="button" class="login_button">Log in</button>
-        <button type="button" class="signup_button">Sign up</button>
+        <div class="button_box">
+            <button type="button" class="login_button">Log in</button>
+            <button type="button" class="signup_button">Sign up</button>
+        </div>
     </header>
     <main>
         <section class="section section_01">
             <div class="box">
                 <div class="main_text">
-                    <p>
+                    <h1>
                         Master difficult<br>
                         subjects easily with<br>
                         cards and practice tests
-                    </p>
+                    </h1>
                 </div>
                 <div class="sub_text">
                     <p>
@@ -60,15 +66,142 @@
                     </button>
                 </div>
             </div>
+            <div class="background_box">
+                <div class="letter"></div>
+                <div class="card card_01"></div>
+                <div class="card card_02"></div>
+            </div>
         </section>
-        <section class="section section_02"></section>
-        <section class="section section_03"></section>
-        <section class="section section_04"></section>
-        <section class="section section_05"></section>
-        <section class="section section_06"></section>
-        <section class="section section_07"></section>
+        <section class="section section_02">
+            <div class="box">
+                <div class="img_box">
+                    <img src="./assets/images/dashboard.png" alt="">
+                </div>
+                <div class="text_box">
+                    <h1>90% of students using<br>
+                    Quizlet say their grades<br>
+                    have improved</h1>
+                </div>
+            </div>
+        </section>
+        <section class="section section_03">
+            <div class="box">
+                <div class="background_box">
+                    <div class="card card_01"></div>
+                    <div class="card card_02"></div>
+                </div>
+                <div class="text_box">
+                    <h1>Memorize anything with<br>
+                    free digital cards</h1>
+                    <p>Research shows that self-testing with flashcards is more<br>
+                    effective than rereading notes. Find ready-made cards created<br>
+                    by your peers and teachers, or instantly create your own.</p>
+                    <button type="button" class="btn yellow_btn">Start</button>
+                </div>
+            </div>
+        </section>
+        <section class="section section_04">
+            <div class="box">
+                <div class="text_box">
+                    <h1>Learn even on the bus</h1>
+                    <p>Leave your notes and paper cards at home and study<br>
+                    anywhere, even offline, with our iOS and Android apps. Your<br>
+                    progress is synchronized on your phone and computer.</p>
+                    <div class="btn_box">
+                        <button type="button" class="btn line_btn">AppStore</button>
+                        <button type="button" class="btn line_btn">Google Play</button>
+                    </div>
+                </div>
+                <div class="img_box">
+                    <img src="./assets/images/dashboard.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section section_05">
+            <div class="box">
+                <div class="text_box">
+                    <h1>Prepare for exams in learn<br>
+                    and test modes</h1>
+                    <p>Turn cards into customizable tests. Don't just memorize,<br>
+                    practice recall with special question types.</p>
+                </div>
+                <div class="btn_box">
+                    <button type="button" class="btn yellow_btn">Try learn and test for free</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="sub_box">
+                    <div class="text_box">
+                        <h1>Practice<br>
+                        in Learn Mode</h1>
+                        <p>
+                            Based on the principles of interval repetition,<br>
+                            learn mode allows you to practice answer<br>
+                            choice questions, true-false, written questions<br>
+                            and more.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./assets/images/chart-line-up.svg" alt="">
+                    </div>
+                </div>
+                <div class="sub_box">
+                    <div class="text_box">
+                        <h1>Take<br>
+                        a test</h1>
+                        <p>
+                            Test your knowledge with practice tests to<br>
+                            prepare for exams.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./assets/images/document.svg" alt="">
+                    </div>
+                </div>
+                <div class="sub_box">
+                    <div class="text_box">
+                        <h1>Choose your<br>
+                            question types</h1>
+                        <p>
+                            Customize the question types you want to see<br>
+                            in learn and test modes to improve your<br>
+                            practice.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./assets/images/bulb.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_06">
+            <div class="box">
+                <div class="img_box">
+                    <img src="./assets/images/class.png" alt="">
+                </div>
+                <div class="img_box">
+                    <img src="./assets/images/classlist.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section section_07">
+            <div class="box">
+                <div class="text_box">
+                    <h1>Master any school and<br>
+                    university subjects</h1>
+                    <p>From math to medicine to modern languages, students use<br>
+                    Quizlet to learn hundreds of different subjects in schools,<br>
+                    universities and beyond. Memorize more and more effectively,<br>
+                    no matter what you're studying.</p>
+                </div>
+                <div class="img_box">
+                    <img src="./assets/images/dashboard.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="./assets/js/selectFunction.js"></script>
+    <script src="./assets/js/scrollFunction.js"></script>
 </body>
 </html>

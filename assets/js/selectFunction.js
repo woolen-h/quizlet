@@ -1,5 +1,8 @@
 const label = document.querySelector('.label');
+// label을 클래스 선택자로 선택
 const options = document.querySelectorAll('.navigation_item');
+// options를 클래스 선택자로 전체 선택
+
 
 // 클릭한 옵션의 텍스트를 라벨 안에 넣음
 const handleSelect = (item) => {
