@@ -1,64 +1,5 @@
-$theme_01: #f6ff8e;
-$theme_02: #1f9370;
-$theme_03: #fdd3f1;
-$theme_04: #1a2027;
-$theme_05: #c9ced6;
-$theme_06: #aca3ff;
-$sub_box_bg: #484d53;
-
-* {
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: 36px;
-    font-family: 'Calistoga', serif;
-}
-h2 {
-    font-size: 24px;
-    font-family: 'Calistoga', serif;
-}
-h3 {
-    font-size: 20px;
-    font-family: 'Calistoga', serif;
-}
-body {
-    font-size: 16px;
-    font-family: 'Heebo', sans-serif;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-}
-p {
-    line-height: 1.5;
-}
-.secondary {
-    font-size: 14px;
-    font-family: 'Heebo', sans-serif;
-}
-.tertiary {
-    font-size: 12px;
-    font-family: 'Heebo', sans-serif;
-}
-button {
-    font-family: 'Heebo', sans-serif;
-}
-
-.btn {
-    padding: 20px;
-    width: auto;
-    border-radius: 40px;
-    font-size: 18px;
-
-    &.yellow_btn {
-        background-color: $theme_01;
-    }
-
-    &.line_btn {
-        border: 2px solid #000;
-    }
-}
+@import '_variables.scss';
+@import '_common.scss';
 
 header {
     width: 100%;
@@ -69,7 +10,7 @@ header {
     color: $theme_01;
     padding: 20px 80px;
     gap: 10px;
-    z-index: 1;
+    z-index: 1; 
     
 
     .logo {
@@ -133,53 +74,7 @@ header {
         font-weight: 300;
         font-size: 20px;
     }
-
-    .search_bar {
-        width: 40%;
-        position: relative;
-
-        input {
-            width: 100%;
-            padding: 20px 10px 20px 65px;
-            border-radius: 40px;
-            border: 0;
-            background-color: #4ca98e;
-            caret-color: $theme_01;
-            color: $theme_01;
-
-            &::placeholder {
-                font-size: 16px;
-                color: #3b8973;
-            }
-            
-            &:-webkit-autofill,
-            &:-webkit-autofill:hover,
-            &:-webkit-autofill:focus,
-            &:-webkit-autofill:active {
-                -webkit-text-fill-color: $theme_01;
-                -webkit-box-shadow: 0 0 0px 1000px #4ca98e inset;
-                box-shadow: 0 0 0px 1000px #4ca98e inset;
-                transition: background-color 5000s ease-in-out 0s;
-            }
-        }
-
-        .search_label {
-            position: absolute;
-            width: 55px;
-            height: 55px;
-            border-radius: 28px;
-            background-color: $theme_01;
-            border: 3px solid #4ca98e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            img {
-                width: 15px;
-            }
-        }
-    }
+    
     .button_box {
         display: flex;
         width: 15%;

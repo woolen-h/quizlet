@@ -1,0 +1,28 @@
+@import '_variables.scss';
+@import '_common.scss';
+
+body.dashboard {
+    display: flex;
+    width: 100%;
+
+    > * {
+        padding: 60px 40px;
+    }
+
+    .left_col {
+        width: 20%;
+
+        .logo {
+            font-size: 40px;
+            color: $theme_02;
+        }
+    }
+
+    .center_col {
+        width: 60%;
+    }
+
+    .right_col {
+        width: 20%;
+    }
+}

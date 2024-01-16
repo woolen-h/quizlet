@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+</head>
+<body class="dashboard">
+    <aside class="left_col">
+        <div class="logo">
+            <h1>Quizlet</h1>
+        </div>
+        <div class="profile_box">
+            <div class="box">
+                <div class="profile_pic"></div>
+                <div class="profile_detail">
+                    <p class="profile_name">Cameron Williamson</p>
+                    <p class="profile_email">williamson@gmail.com</p>
+                </div>
+            </div>
+            <ul class="profile_place_list">
+                <li class="noti_new notification">Notification</li>
+                <li class="noti_new achievements">Achievements</li>
+                <li>Setting</li>
+            </ul>
+        </div>
+        <div class="create_btn_box">
+            <button type="button" class="btn">Create</button>
+        </div>
+        <div class="list_section">
+            <ul>
+                <li>Study sets</li>
+                <li>Folders</li>
+                <li>Classes</li>
+                <li>Expert solutions</li>
+            </ul>
+            <div class="divider"></div>
+            <ul>
+                <li>Log out</li>
+            </ul>
+        </div>
+        <div class="list_section sub">
+            <ul>
+                <li>Upgrade</li>
+                <li>Privacy policy</li>
+                <li>Help and feedback</li>
+            </ul>
+        </div>
+    </aside>
+    <main class="center_col">
+        <div class="search_bar">
+            <button type="button" class="search_label">
+                <img src="./assets/images/search.svg" alt="">
+            </button>
+            <input type="text" id="search" placeholder="Ask Quizlet anything">
+            <button type="button" class="btn btn_green">
+                Upgrade to QuizletPlus
+            </button>
+        </div>
+        <div class="review_box">
+            <div class="text_box">
+                <h1>Time for your review!</h1>
+                <p>Sort 20 flashcards from the last set to boost your Memory Score.<br>
+                Studying previous terms can help you remember this material.</p>
+            </div>
+            <div class="btn_box">
+                <button type="button" class="btn btn_transparent">Start your review</button>
+            </div>
+        </div>
+        <div class="update_features_box">
+            <h1>Try these updated features</h1>
+            <div class="box">
+                <div class="sub_box">
+                    <h4>Improve your results with Learn</h4>
+                    <p>
+                        Learn with improved questions,
+                        more control and hints
+                    </p>
+                </div>
+                <div class="sub_box">
+                    <h4>More powerful search</h4>
+                    <p>
+                        Find flashcards on any subject you need to learn
+                    </p>
+                </div>
+                <div class="sub_box">
+                    <h4>Be ready for your exams</h4>
+                    <p>
+                        Test mode with AI·enhanced hints and study guidance
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_box">
+            <div class="recommended_box">
+                <h1>Recommended expert solutions</h1>
+                <div class="box white">
+                    <div class="thumb_box"></div>
+                    <div class="detail_box">
+                        <h4>Discrete Mathematics and Its Applications</h4>
+                        <p>7th Edition • ISBN: 9780073383095 • Kenneth Rosen</p>
+                        <div class="tag">
+                            <a href="">
+                                4,483 solutions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box white">
+                    <div class="thumb_box"></div>
+                    <div class="detail_box">
+                        <h4>Chemistry: The Molecular Nature of Matter and Change</h4>
+                        <p>7th Edition • ISBN: 9780073511177 • Patricia Amateis, Silberberg</p>
+                        <div class="tag">
+                            <a href="">
+                                6,032 solutions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box white">
+                    <div class="thumb_box"></div>
+                    <div class="detail_box">
+                        <h4>Calculus: Early Transcendentals</h4>
+                        <p>8th Edition • ISBN: 9781285741550 • James Stewart</p>
+                        <div class="tag">
+                            <a href="">
+                                11,084 solutions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="activity_calendar_box">
+                <h1>Your activity calendar</h1>
+                <div class="box green">
+                    <h1>6-day streak</h1>
+                    <p>Study tomorrow to keep your streak going!</p>
+                </div>
+                <div class="calendar"></div>
+            </div>
+        </div>
+    </main>
+    <aside class="right_col">
+        <h1>Last sets</h1>
+        <div class="box white">
+            <h1>New words</h1>
+            <p>created by <span>Cameron Williamson</span></p>
+        </div>
+    </aside>
+    <script src="./assets/js/selectFunction.js"></script>
+    <script src="./assets/js/scrollFunction.js"></script>
+</body>
+</html>
