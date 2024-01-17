@@ -135,32 +135,6 @@ header {
                 line-height: 1.7;
                 font-weight: 300;
                 font-size: 18px;
-
-                .signup_free_button {
-                    width: 70%;
-                    margin-top: 30px;
-                    padding: 10px 47px 10px 10px;
-                    text-align: center;
-                    border-radius: 40px;
-                    font-weight: 400;
-                    font-size: 18px;
-                    background: #aca3ff;
-                    position: relative;
-
-                    &::after {
-                        content: '';
-                        display: inline-block;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        border-radius: 25px;
-                        border: 2px solid $theme_06;
-                        width: 43px;
-                        height: 43px;
-                        background: $theme_01 url('../images/angle-right.svg') no-repeat center;
-                        background-size: 14px;
-                    }
-                }
             }
         }
         .background_box {

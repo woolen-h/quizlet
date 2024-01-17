@@ -16,6 +16,26 @@ body.dashboard {
             font-size: 40px;
             color: $theme_02;
         }
+        .icon_btn {
+            width: 100%;
+            background-color: $theme_02;
+            color: $theme_01;
+            margin-top: 15px;
+
+            .icon_box {
+                color: $theme_02;
+                border-color: $theme_02;
+            }
+        }
+        .list_section {
+            margin-top: 20px;
+            
+            ul {
+                li {
+                    padding: 10px 0;
+                }
+            }
+        }
     }
 
     .center_col {

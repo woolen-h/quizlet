@@ -1,4 +1,6 @@
 @import '_variables.scss';
+@import '_icon.scss';
+
 
 * {
     box-sizing: border-box;
@@ -17,6 +19,7 @@ h3 {
     font-family: 'Calistoga', serif;
 }
 body {
+    width: 100%;
     font-size: 16px;
     font-family: 'Heebo', sans-serif;
 
@@ -51,6 +54,38 @@ button {
 
     &.line_btn {
         border: 2px solid #000;
+    }
+    
+
+    &.icon_btn {
+        width: 70%;
+        margin-top: 30px;
+        padding: 10px 47px 10px 10px;
+        text-align: center;
+        border-radius: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        background: #aca3ff;
+        position: relative;
+
+        .icon_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 25px;
+            border: 2px solid $theme_06;
+            width: 47px;
+            height: 47px;
+            background: $theme_01;
+            
+            i {
+                position: relative;
+                top: 3px;
+            }
+        }
     }
     
 }
