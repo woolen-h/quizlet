@@ -64,6 +64,7 @@ button {
     border: none;
     font-size: inherit;
 	padding: 0;
+	cursor: pointer;
 }
 
 /* 크롬 search autofill 제거 */

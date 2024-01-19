@@ -68,6 +68,7 @@ button {
   font-size: 18px;
   background: #aca3ff;
   position: relative;
+  transition: 0.3s;
 }
 .btn.icon_btn .icon_box {
   display: flex;
@@ -81,10 +82,23 @@ button {
   width: 47px;
   height: 47px;
   background: #f6ff8e;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+  transition-property: background, border, color;
 }
 .btn.icon_btn .icon_box i {
   position: relative;
   top: 3px;
+}
+.btn.icon_btn:hover {
+  box-shadow: inset 250px 0 0 0 #f6ff8e;
+}
+.btn.icon_btn:hover .icon_box {
+  border: 2px solid #f6ff8e;
+  background: #aca3ff;
+}
+.btn.icon_btn:hover .icon_box i {
+  color: #fff;
 }
 
 .search_bar {
@@ -216,9 +230,17 @@ header .navigation_box .label {
   color: #f6ff8e;
   padding: 10px 15px;
   cursor: pointer;
+  border-radius: 25px;
   width: 100%;
   text-align: left;
   font-weight: 300;
+  transition: 0.3s;
+}
+header .navigation_box .label:hover {
+  background-color: #f6ff8e;
+  color: #1a2027;
+  padding-left: 40px;
+  font-weight: 500;
 }
 header .navigation_box .navigation_list {
   position: absolute;
@@ -260,6 +282,11 @@ header .button_box .login_button {
   border-radius: 30px;
   padding: 15px 0;
   font-weight: 400;
+  transition: 0.3s;
+}
+header .button_box .login_button:hover {
+  background-color: #f6ff8e;
+  color: #1a2027;
 }
 header .button_box .signup_button {
   width: 50%;
@@ -268,6 +295,11 @@ header .button_box .signup_button {
   border-radius: 30px;
   padding: 15px 0;
   font-weight: 400;
+  transition: 0.3s;
+}
+header .button_box .signup_button:hover {
+  background-color: #1a2027;
+  color: #f6ff8e;
 }
 
 .section {

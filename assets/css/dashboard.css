@@ -68,6 +68,7 @@ button {
   font-size: 18px;
   background: #aca3ff;
   position: relative;
+  transition: 0.3s;
 }
 .btn.icon_btn .icon_box {
   display: flex;
@@ -81,10 +82,23 @@ button {
   width: 47px;
   height: 47px;
   background: #f6ff8e;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+  transition-property: background, border, color;
 }
 .btn.icon_btn .icon_box i {
   position: relative;
   top: 3px;
+}
+.btn.icon_btn:hover {
+  box-shadow: inset 250px 0 0 0 #f6ff8e;
+}
+.btn.icon_btn:hover .icon_box {
+  border: 2px solid #f6ff8e;
+  background: #aca3ff;
+}
+.btn.icon_btn:hover .icon_box i {
+  color: #fff;
 }
 
 .search_bar {
